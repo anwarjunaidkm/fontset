@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+/* @import url("https://fonts.cdnfonts.com/css/optima"); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +9,27 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+}
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+/* .font-optima {
+  font-family: "Optima", sans-serif;
+} */
+
+@font-face {
+  font-family: "Optima";
+  src: url("/fonts/optima.woff2") format("woff2"),
+    url("/fonts/optima.woff") format("woff"),
+    url("/fonts/optima.ttf") format("truetype"),
+    url("/fonts/optima.otf") format("opentype");
+  /* Add more formats if necessary */
+  font-weight: normal;
+  font-style: normal;
 }
 
 @media (prefers-color-scheme: dark) {
